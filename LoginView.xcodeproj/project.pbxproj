@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AC58F07D2236DDBF002B6FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58F07C2236DDBF002B6FCB /* AppDelegate.swift */; };
-		AC58F07F2236DDBF002B6FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58F07E2236DDBF002B6FCB /* ViewController.swift */; };
 		AC58F0822236DDBF002B6FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC58F0802236DDBF002B6FCB /* Main.storyboard */; };
 		AC58F0842236DDC0002B6FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC58F0832236DDC0002B6FCB /* Assets.xcassets */; };
 		AC58F0872236DDC0002B6FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC58F0852236DDC0002B6FCB /* LaunchScreen.storyboard */; };
+		AC58F0AD2236EAA6002B6FCB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58F0AC2236EAA6002B6FCB /* MainViewController.swift */; };
+		ACE45788223961BA002F5DB9 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE45787223961BA002F5DB9 /* LoginData.swift */; };
+		ACE4578A22396790002F5DB9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4578922396790002F5DB9 /* DetailViewController.swift */; };
+		ACE4578C2239A2D5002F5DB9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4578B2239A2D5002F5DB9 /* ForgotPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC58F0792236DDBF002B6FCB /* LoginView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC58F07C2236DDBF002B6FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC58F07E2236DDBF002B6FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC58F0812236DDBF002B6FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC58F0832236DDC0002B6FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC58F0862236DDC0002B6FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC58F0882236DDC0002B6FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC58F0AC2236EAA6002B6FCB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ACE45787223961BA002F5DB9 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		ACE4578922396790002F5DB9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ACE4578B2239A2D5002F5DB9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		AC58F07B2236DDBF002B6FCB /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
-				AC58F07C2236DDBF002B6FCB /* AppDelegate.swift */,
-				AC58F07E2236DDBF002B6FCB /* ViewController.swift */,
-				AC58F0802236DDBF002B6FCB /* Main.storyboard */,
-				AC58F0832236DDC0002B6FCB /* Assets.xcassets */,
-				AC58F0852236DDC0002B6FCB /* LaunchScreen.storyboard */,
+				ACE4578F2239A56A002F5DB9 /* Model */,
+				ACE4578E2239A560002F5DB9 /* Controllers */,
+				ACE4578D2239A552002F5DB9 /* Supporting files */,
 				AC58F0882236DDC0002B6FCB /* Info.plist */,
 			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		ACE4578D2239A552002F5DB9 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AC58F0832236DDC0002B6FCB /* Assets.xcassets */,
+				AC58F07C2236DDBF002B6FCB /* AppDelegate.swift */,
+				AC58F0802236DDBF002B6FCB /* Main.storyboard */,
+				AC58F0852236DDC0002B6FCB /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		ACE4578E2239A560002F5DB9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACE4578B2239A2D5002F5DB9 /* ForgotPasswordViewController.swift */,
+				ACE4578922396790002F5DB9 /* DetailViewController.swift */,
+				AC58F0AC2236EAA6002B6FCB /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ACE4578F2239A56A002F5DB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACE45787223961BA002F5DB9 /* LoginData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC58F07F2236DDBF002B6FCB /* ViewController.swift in Sources */,
+				ACE4578A22396790002F5DB9 /* DetailViewController.swift in Sources */,
+				ACE4578C2239A2D5002F5DB9 /* ForgotPasswordViewController.swift in Sources */,
 				AC58F07D2236DDBF002B6FCB /* AppDelegate.swift in Sources */,
+				AC58F0AD2236EAA6002B6FCB /* MainViewController.swift in Sources */,
+				ACE45788223961BA002F5DB9 /* LoginData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
